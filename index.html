@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links </title>
+    <style>
+
+        .title, h1 {
+            font-family: "cursive",sans-serif;
+            display: flow;
+            align-items: center;
+            max-width: inherit;
+            text-align: center;
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: image('/img/background.svg');
+        }
+        header, section {
+            padding: 20px;
+        }
+        nav {
+            background-color: #333; /* Background color */
+            padding: 10px; /* Padding around the navigation */
+            display: flow;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove default list styles */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items horizontally */
+            margin-right: 20px; /* Space between list items */
+        }
+
+        nav ul li a {
+            color: #fff; /* Link text color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+        }
+
+        nav ul li a:hover {
+            color: #ff5733; /* Hover color */
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .camera {
+            height: 70px;
+            width: 70px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        footer {
+            background: lavender;
+            display: flex;
+            font-family: Bahnschrift,serif;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="title" style="flex: auto">
+        <img class="camera" src="img/camera.svg" alt="A vector depicting a camera">
+        <h1>Limited Design Images</h1>
+        <h4>A flick of awesomeness</h4>
+    </div>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#menu">Menu</a></li>
+    </ul>
+</nav>
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to our website! We are excited to share with you some amazing images and information.</p>
+    <a href="#"><img src="img/technology.jpeg" alt="Technology"></a>
+</section>
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+        <a href="#"><img src="img/nature.jpeg" alt="Nature 1"></a>
+        <a href="#"><img src="img/nature-1.jpeg" alt="Nature 2"></a>
+        <a href="#"><img src="img/nature-2.jpeg" alt="Nature 3"></a>
+        <a href="#"><img src="img/nature-3.jpeg" alt="Nature 4"></a>
+    </div>
+</section>
+<section id="menu">
+    <h2>Menu</h2>
+    <div>
+        <p><a href="#"><img src="img/food.jpeg" alt="Food 1"> Beef Teryaki</a></p>
+        <p><a href="#"><img src="img/food-1.jpeg" alt="Food 2"> Vegeterian Pizza Rolls</a></p>
+        <p><a href="#"><img src="img/food-2.jpeg" alt="Food 3"> Organic Food Items</a></p>
+    </div>
+</section>
+
+</body>
+<section>
+    <footer>
+        <div>
+            <h3>Image Linking</h3>
+            <p>A new to present vivid images with linked text.</p>
+        </div>
+        <div>
+            <h3>All rights reserved.</h3>
+            <label> &copy; 2024 Limited Design Images</label>
+        </div>
+    </footer>
+</section>
+</html>
